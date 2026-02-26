@@ -4,7 +4,7 @@ object dm: Tdm
   PixelsPerInch = 144
   object conexao: TFDConnection
     Params.Strings = (
-      'Database=C:\ETEC\Projetos_ETEC_PAM-II_Div1\bdlanchonete.db'
+      'Database=C:\ETEC\Projetos_ETEC_PAM-II_Div2\bdlanchonete.db'
       'DriverID=SQLite')
     LoginPrompt = False
     Left = 112

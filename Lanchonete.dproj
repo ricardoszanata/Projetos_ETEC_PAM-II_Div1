@@ -227,6 +227,10 @@
             <Form>frmiuusuario</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="ulistausuarios.pas">
+            <Form>Form1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
