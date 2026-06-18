@@ -55,45 +55,4 @@ object dm: Tdm
       FieldName = 'logado'
     end
   end
-  object Conexao: TFDConnection
-    Params.Strings = (
-      'Database=C:\Projetos_ETEC_PAM-II_Div2\bdlanchonete.db'
-      'DriverID=SQLite')
-    Connected = True
-    LoginPrompt = False
-    Left = 496
-    Top = 16
-  end
-  object ValidaEntrada: TFDQuery
-    Connection = Conexao
-    SQL.Strings = (
-      'select * from usuarios')
-    Left = 496
-    Top = 88
-    object ValidaEntradausuid: TFDAutoIncField
-      FieldName = 'usuid'
-      Origin = 'usuid'
-      ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = False
-    end
-    object ValidaEntradausunome: TWideMemoField
-      FieldName = 'usunome'
-      Origin = 'usunome'
-      BlobType = ftWideMemo
-    end
-    object ValidaEntradausulogin: TWideMemoField
-      FieldName = 'usulogin'
-      Origin = 'usulogin'
-      BlobType = ftWideMemo
-    end
-    object ValidaEntradaususenha: TWideMemoField
-      FieldName = 'ususenha'
-      Origin = 'ususenha'
-      BlobType = ftWideMemo
-    end
-    object ValidaEntradausulogado: TBooleanField
-      FieldName = 'usulogado'
-      Origin = 'usulogado'
-    end
-  end
 end
